@@ -1,0 +1,1299 @@
+/*
+Theme Name: pro
+Theme URI: http://example.com/your-theme
+Author: Safa 
+Author URI: http://example.com
+Description: This is a test project
+Version: 1.0.0
+License: GNU General Public License v2 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, custom-background
+*/
+.border {
+    border: 1px solid ;
+}
+
+.p-3 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+body {
+    background-image: url('assets/sports-slicing/pettern-2.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.container, .new-container {
+    background-image: url('assets/sports-slicing/pettern-2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0px;
+    background-color: transparent;
+}
+.background-div, .search-engine {
+    padding: 1rem;
+    border: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.common-background {
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.membership-div {
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: skew(-20deg);
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.account-div {
+    background-image: url('assets/sports-slicing/pettern-3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: skew(-20deg);
+    position: relative;
+    overflow: hidden;
+}
+.search-container {
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.search-field {
+    width: 100%;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #333;
+    background-color: #00000015;
+    color: #fff;
+}
+.search-submit {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 0;
+}
+.search-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(100%);
+}
+.new-container .row > .col-md-3 {
+    margin-right: 0;
+}
+.new-container .row {
+    flex-wrap: nowrap;
+    background-color: transparent;
+}
+.new-container .col-md-3 {
+    flex: 0 0 auto;
+}
+.main-banner {
+    max-width: 1200px;
+    margin: 0 auto; 
+    position: relative; 
+    background-size: cover; 
+    background-position: center;
+    height: 400px;
+    padding: 20px;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+}
+.banner-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+.banner-icons img {
+    width: 30px;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .main-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 10px ; /* Shadow effect */
+}
+.slider {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.slide.active {
+    opacity: 1;
+}
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.prev-btn {
+    left: 10px;
+}
+.next-btn {
+    right: 10px;
+}
+.main-banner {
+    position: relative;
+    height: 500px; 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    height: 100%;
+}
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+.left-slide-btn {
+    left: 10px;
+}
+.right-slide-btn {
+    right: 10px;
+}
+.prev-btn1, .next-btn1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-btn1 {
+    left: 0; /* Align to the left edge */
+    margin-left: 10px; /* Space between the button and the image edge */
+}
+
+.next-btn1 {
+    right: 0; /* Align to the right edge */
+    margin-right: 10px; /* Space between the button and the image edge */
+}
+
+.prev-btn1:hover, .next-btn1:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the button on hover */
+}
+
+.main-banner {
+    position: relative; /* Make sure the parent container is positioned relative to position the buttons correctly */
+}
+
+.slider {
+    position: relative; /* Keep the slider relative to contain the buttons within it */
+}
+
+
+    .subdiv-1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .post-div {
+        width: 100%; /* Take full width on smaller screens */
+    }
+    .additional-div, .second-sub-div, .image-div, .text-div {
+        width: 100%;
+        margin-left: 0; /* Remove left margin */
+    }
+    .additional-div h3, .additional-div p {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+@media (max-width: 480px) {
+    .main-banner {
+        height: 200px;
+        margin-top: 200px; /* Adjust the space for even smaller screens */
+    }
+    .slider img {
+        max-width: 100%; /* Ensure images are responsive */
+    }
+    .new-div-container, .recent-posts-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    .new-div-container .slide {
+        width: 100%; /* Make slides full-width on mobile */
+    }
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-field, .search-submit {
+        width: 100%;
+    }
+    .search-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+.adidas-bold {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: darkgreen;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-level {
+    position: relative;
+}
+.dropdown-subcontent, .dropdown-subcontent-level3 {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: green;
+    min-width: 160px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+.dropdown-subcontent.show, .dropdown-subcontent-level3.show {
+    display: block;
+    opacity: 1;
+    max-height: 300px;
+}
+.dropdown-level > a::after {
+    content: ">";
+    float: right;
+    margin-left: 10px;
+}
+.dropdown-subcontent-level3 > a::after {
+    content: ">";
+    float: right;
+    margin-left: 10px;
+}
+.new-div-container {
+    padding: 1rem;
+    background-color: transparent;
+    margin-top: 2rem;
+    display: flex; 
+    overflow-x: auto; 
+    gap: 20px; 
+}
+.new-div-container .slide {
+    flex: 0 0 auto; 
+    width: 300px; 
+    border-radius: 8px; 
+    background-image: url('assets/sports-slicing/pettern-3.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.slider-image {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid ;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+.slider-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.new-div-container .slide:hover {
+    transform: translateY(-5px);
+}
+.new-text-image-container {
+    display: flex;
+    align-items: stretch;
+}
+.text-div {
+    position: relative;
+    flex: 1; 
+    color: white; 
+    text-align: center; 
+    padding: 1rem; 
+    background-image: url('assets/sports-slicing/pettern-3.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.text-div::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+    background-image: url('assets/sports-slicing/pettern-3.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    transform: skew(-20deg); 
+    z-index: -1;
+}
+.image-div {
+    flex-shrink: 0;
+    background-image: url('assets/sports-slicing/pettern-3.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.image-div img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+.recent-posts-container {
+    margin-top: 2rem;
+}
+.recent-posts-set {
+    display: flex;
+    flex-direction: column;
+}
+.recent-post {
+    border-radius: 8px; 
+    margin-bottom: 2rem; 
+    overflow: hidden;
+    padding: 1rem;
+}
+.recent-post-image img {
+    width: 100%; 
+    height: auto;
+}
+.recent-post-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.recent-post-text {
+    font-size: 1rem; 
+    margin-bottom: 1rem; 
+}
+.read-more {
+    font-size: 1rem; 
+    text-decoration: none; 
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+.recent-post-title {
+    font-weight: bold;
+    color: white;
+}
+.recent-post {
+    padding: 0;
+}
+.recent-post-content {
+    padding: 0; 
+}
+.recent-post-title {
+    padding: 0; 
+    font-weight: bold;
+    color: white;
+}
+.read-more {
+    padding: 0; 
+    margin: 0; 
+}
+.additional-container .new-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 100px;
+}
+.twitter-image-container, .facebook-page-container {
+    width: 100%; 
+    max-width: 340px; 
+    height: 500px; 
+    margin-bottom: 20px; 
+}
+.twitter-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+.facebook-iframe {
+    width: 100%;
+    height: 100%;
+}
+.additional-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.image-container, .facebook-page-container {
+    border-radius: 15px; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    background-color: #fff; 
+    max-width: 100%;
+}
+.image-container img {
+    width: 100%; 
+    height: auto; 
+}
+.facebook-page-container iframe {
+    width: 100%;
+    height: 100%; 
+    border-radius: 15px; 
+}
+.additional-container h2 {
+    color: #fff; 
+    font-weight: bold; 
+}
+.new-div-container {
+    margin-top: 20px;
+}
+.new-sub-div {
+    padding: 20px;
+    border: 1px solid ;
+}
+.top-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button-group {
+    display: flex; 
+    gap: 40px;
+}
+.button-group button {
+    background-color: transparent;
+    border: none;
+    color: white; 
+    font-weight: bold; 
+    box-shadow: none;
+    transition: none; 
+}
+.button-group button:hover,
+.button-group button:focus,
+.button-group button:active {
+    background-color: transparent; 
+    color: white; 
+    box-shadow: none; 
+    outline: none; 
+}
+.btn-primary {
+    border: none; 
+    color: white; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+.match-info {
+    text-align: left;
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding: 20px;
+}
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.details-text {
+    font-size: 16px;
+    line-height: 1.6; 
+}
+.disclaimer {
+    background-size: cover; 
+    padding: 20px; 
+    text-align: center; 
+    color: #fff; 
+    margin-top: 20px;
+}
+.disclaimer-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.disclaimer p {
+    font-size: 14px;
+    line-height: 1.6; 
+    margin: 0;
+}
+.footer {
+    background-image: url('assets/sports-slicing/pettern-3.png');
+    background-size: cover;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 20px;
+}
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 5px 0;
+}
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.footer-section p {
+    margin: 10px 0;
+}
+.footer-section p strong {
+    font-size: 1.2em;
+}
+.new-div-container {
+    width: 100%;
+    padding: 20px;
+}
+.top-div {
+    background-size: cover;
+    padding: 20px;
+}
+.btn-primary {
+    background-size: cover;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    opacity: 0.8;
+}
+.match-info {
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+}
+.intro-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.details-text {
+    color: white; 
+    font-size: 1em;
+    line-height: 1.6;
+}
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.main-banner {
+    flex: 2; 
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+.additional-content {
+    flex: 1; 
+    padding: 20px; 
+    border-left: 1px solid ; 
+}
+.banner-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.banner-icons a {
+    margin-left: 10px;
+}
+.slider img {
+    max-width: 100%; 
+}
+.container {
+    display: flex; 
+    justify-content: space-between; 
+}
+.subdiv-1 {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    width: 70%;
+}
+.post-div {
+    width: calc(25% - 20px); 
+    height: 220px; 
+    border: 1px solid; 
+    border-radius: 5px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px ;
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('assets/sports-slicing/pettern-3.png'); 
+}
+.post-image {
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}
+.post-title {
+    padding: 10px;
+    text-align: center;
+}
+.post-title h2 {
+    margin: 0;
+    font-size: 18px; 
+}
+.new-text-image-container {
+    display: flex;
+    align-items: center; 
+}
+.text-div, .image-div {
+    width: 300px; 
+    height: 200px; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.image-div img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+.first-sub-div {
+    padding-right: 200px; 
+}
+.second-sub-div {
+    padding-left: 30px; 
+}
+.recent-posts-set {
+    margin-bottom: 20px;
+}
+.recent-post {
+    margin-bottom: 20px;
+}
+.recent-post-image img {
+    width: 100%;
+    height: auto;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.section-text {
+    font-size: 16px;
+}
+.additional-container {
+    margin-top: 20px;
+}
+.new-div {
+    margin-bottom: 20px;
+}
+.twitter-image img {
+    width: 100%;
+    height: auto;
+}
+.facebook-page iframe {
+    width: 100%;
+    height: 500px; 
+}
+.date-time-container {
+    width: 100%;
+    padding: 20px;
+}
+.date-time-title {
+    background-color: #1f6b31; 
+    background-image: url('assets/sports-slicing/pettern-3.png');
+    background-size: cover;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+.date-time-widget {
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em; 
+    font-weight: bold; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.date-time-widget .date {
+    font-size: 1.2em;
+    margin-bottom: 10px; 
+}
+.date-time-widget .time {
+    font-size: 2em;
+}
+.second-sub-div {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 0%;
+    background-image: url('assets/sports-slicing/pettern-3.png');
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+}
+.weather-widget {
+    display: flex;
+    align-items: center;
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    background-size: cover;
+    padding: 15px;
+    border-radius: 10px;
+}
+.weather-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.weather-time {
+    font-size: 32px;
+    margin: 0;
+}
+.weather-location {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.weather-temperature {
+    font-size: 28px;
+    margin: 5px 0;
+}
+.weather-status {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.weather-forecast {
+    display: flex;
+    margin-top: 10px;
+}
+.forecast-item {
+    text-align: center;
+    margin-right: 15px;
+}
+.forecast-item p {
+    margin: 0;
+}
+.additional-div {
+    margin-top: 200px;
+}
+.additional-div h3 {
+    background-image: url('assets/sports-slicing/pettern-3.png');
+    color: white;
+    font-weight: bold;
+    padding: 10px; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.additional-div p {
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    color: white;
+    font-weight: bold;
+    padding: 10px; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+.additional-div {
+    margin-top: 200px;
+}
+.events-section {
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    padding: 20px;
+    width: 300px; 
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.events-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center; 
+    color: white; 
+    background-image: url('assets/sports-slicing/pettern-3.png');
+}
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.event-item img {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.additional-div h3 {
+    color: white;
+    font-weight: bold;
+    padding: 10px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center; 
+}
+.additional-div p {
+    color: white;
+    font-weight: bold;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 10px;
+    text-align: center; 
+}
+.events-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.prev-btn, .next-btn {
+    background-image: url('assets/sports-slicing/pettern-1.png');
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.more-events {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.more-events:hover {
+    text-decoration: underline;
+}
+.subdiv-1 {
+    display: flex;
+}
+.post-div {
+    width: 23%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+.post-image {
+    height: 150px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.post-title {
+    padding: 10px;
+    text-align: center;
+}
+.post-title h2 {
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.main-banner {
+    margin-bottom: 200px;
+}
+@media (max-width: 1200px) {
+    .col-md-3 {
+        flex: 0 0 25%; 
+        max-width: 25%;
+    }
+    .search-container {
+        flex: 0 0 50%; 
+        max-width: 50%;
+    }
+}
+@media (max-width: 992px) {
+    .col-md-3 {
+        flex: 0 0 33.33%; 
+        max-width: 33.33%;
+    }
+    .search-container {
+        flex: 0 0 100%; 
+        max-width: 100%;
+        margin-top: 20px; 
+    }
+}
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+    .search-container {
+        flex: 0 0 100%; 
+        max-width: 100%;
+        margin-top: 20px; 
+    }
+    .dropbtn {
+        font-size: 14px; 
+        padding: 10px 15px; 
+    }
+    .dropdown-content, .dropdown-subcontent, .dropdown-subcontent-level3 {
+        min-width: 120px;
+    }
+}
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+        margin-bottom: 10px; 
+    }
+    .search-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 10px; 
+    }
+    .inner-content, .dropbtn, .search-field {
+        font-size: 12px; 
+    }
+}
+.adidas-bold {
+    margin-right: 50px; 
+}
+.membership-div {
+    margin-right: 10px; 
+}
+.row {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding:100px
+}
+.new-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+}
+.col-md-3 {
+    flex: 1 0 25%; 
+    padding: 15px; 
+}
+.background-div {
+    padding: 20px;
+    text-align: center; 
+    box-sizing: border-box; 
+}
+.dropdown-content, .dropdown-subcontent {
+    position: absolute;
+    display: none;
+}
+.dropdown:hover .dropdown-content, .dropdown-content:hover .dropdown-subcontent {
+    display: block;
+}
+.container, .new-text-image-container, .recent-posts-container, .additional-container, .new-div-container {
+    justify-content: center;
+}
+.background-div.adidas-bold {
+    background-color: transparent; 
+    border: 1px solid; 
+}
+.inner-content {
+    padding: 10px; 
+    color: white; 
+    padding-right: 100px;
+}
+.events-footer {
+    padding-left: 100px;
+}
+.additional-div {
+    width: 100%; 
+    max-width: 400px; 
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box; 
+    overflow: auto; 
+    background-image: url('assets/sports-slicing/pettern-1.png');
+}
+@media (max-width: 768px) {
+    .additional-div {
+        width: 100%; 
+        max-width: none; 
+        height: auto; 
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.subdiv-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0%
+}
+
+.post-div {
+    position: relative;
+    width: 30%; /* Adjust this width to control the size of each post */
+    background-color: #004B3B; /* Matches your background */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post-image {
+    width: 100%;
+    height: 180px; /* Set the height for the post images */
+    background-size: cover;
+    background-position: center;
+}
+
+.post-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.post-title a {
+    color: #fff; /* White color for the title text */
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: -25px; /* Position to the left of the first post */
+}
+
+.next-btn {
+    right: -25px; /* Position to the right of the last post */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Ensure all recent posts have the same height */
+.recent-posts-container .recent-posts-set {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Equal height for all recent post containers */
+.recent-post {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Ensure all images within recent posts have the same height */
+.recent-post-image {
+    flex: 0 1 auto;
+    max-height: 300px; /* Set max-height to ensure uniformity */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recent-post-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%; /* Ensure image scales within the container */
+    object-fit: cover;
+}
+
+/* Ensure all content within recent posts have the same height */
+.recent-post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recent-post-title {
+    margin-bottom: 100px; /* Adjust if needed */
+    padding: 30px; /* Add padding to give space inside the title area */
+}
+
+.read-more {
+    margin-top: 100px; /* Adjust if needed */
+}

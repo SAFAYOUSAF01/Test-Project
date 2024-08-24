@@ -1,83 +1,70 @@
-Here's an improved version of your README file for the custom WordPress theme:
+[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
----
+_s
+===
 
-# Custom WordPress Theme
+Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
-## Overview
-This fully custom WordPress theme, developed by Safa Yousaf, is designed to be highly flexible, responsive, and optimized for performance. Ideal for a wide range of websites, this theme showcases expertise in both front-end and back-end technologies.
+My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
 
-## Features
-- **Responsive Design**: Ensures a seamless experience across all devices.
-- **Customizable**: Includes options for custom post types, widgets, and theme settings for easy tailoring.
-- **SEO Optimized**: Built with best practices to enhance search engine visibility.
-- **Fast and Lightweight**: Optimized for speed with minimal dependencies and clean code.
-- **Cross-Browser Compatibility**: Tested across all major browsers for consistent performance.
+* A modern workflow with a pre-made command-line interface to turn your project into a more pleasant experience.
+* A just right amount of lean, well-commented, modern, HTML5 templates.
+* A custom header implementation in `inc/custom-header.php`. Just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
+* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
+* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
+* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
+* 2 sample layouts in `sass/layouts/` made using CSS Grid for a sidebar on either side of your content. Just uncomment the layout of your choice in `sass/style.scss`.
+Note: `.no-sidebar` styles are automatically loaded.
+* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
+* Full support for `WooCommerce plugin` integration with hooks in `inc/woocommerce.php`, styling override woocommerce.css with product gallery features (zoom, swipe, lightbox) enabled.
+* Licensed under GPLv2 or later. :) Use it to make something cool.
 
-## Technologies Used
-- **Front-End**: HTML5, CSS3, JavaScript (ES6+), Bootstrap, jQuery
-- **Back-End**: PHP, WordPress Codex, MySQL
-- **Tools and Libraries**: Node.js, Gulp, SASS/SCSS, Git
+Installation
+---------------
 
-## Installation
+### Requirements
 
-1. **Download the Theme**:
-   - Clone the repository or download the ZIP file from the [GitHub Repository Link](https://github.com/SAFAYOUSAF01/Test-Project.git).
+`_s` requires the following dependencies:
 
-2. **Upload to WordPress**:
-   - Log in to your WordPress dashboard.
-   - Navigate to `Appearance > Themes`.
-   - Click on `Add New`, then `Upload Theme`.
-   - Select the downloaded ZIP file and click `Install Now`.
+- [Node.js](https://nodejs.org/)
+- [Composer](https://getcomposer.org/)
 
-3. **Activate the Theme**:
-   - After installation, click `Activate` to set the theme as your active WordPress theme.
+### Quick Start
 
-## Customization
+Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a six-step find and replace on the name in all the templates.
 
-### Theme Options
-Access the custom options panel to configure various aspects of the theme:
-- **Logo Upload**: Upload your site’s logo.
-- **Custom Colors**: Change primary and secondary colors.
-- **Typography**: Select fonts for headers and body text.
-- **Layout Settings**: Choose between different layout options (full-width, boxed, etc.).
+1. Search for `'_s'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
+2. Search for `_s_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
+3. Search for `Text Domain: _s` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
+4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
+5. Search for `_s-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
+6. Search for `_S_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
 
-### Custom Post Types
-Includes custom post types for:
-- **Portfolio**: Showcase your projects.
-- **Testimonials**: Add client testimonials.
+Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
 
-### Widgets
-The theme features custom widgets for:
-- **Social Media Links**
-- **Recent Posts**
-- **Contact Information**
+### Setup
 
-## Development
+To start using all the tools that come with `_s`  you need to install the necessary Node.js and Composer dependencies :
 
-### Prerequisites
-Ensure you have the following tools installed:
-- Node.js
-- Gulp
-- SASS/SCSS
+```sh
+$ composer install
+$ npm install
+```
 
-### Development Setup
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/SAFAYOUSAF01/Test-Project.git
-   ```
-2. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-3. **Run Gulp Tasks**:
-   - Compile SASS/SCSS files: `gulp sass`
-   - Watch for changes: `gulp watch`
+### Available CLI commands
 
-## Contributing
-Feel free to contribute by submitting issues or pull requests. For more details on contributing, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md).
+`_s` comes packed with CLI commands tailored for WordPress theme development :
 
-## License
-This theme is licensed under the [MIT License](LICENSE).
+- `composer lint:wpcs` : checks all PHP files against [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
+- `composer lint:php` : checks all PHP files for syntax errors.
+- `composer make-pot` : generates a .pot file in the `languages/` directory.
+- `npm run compile:css` : compiles SASS files to css.
+- `npm run compile:rtl` : generates an RTL stylesheet.
+- `npm run watch` : watches all SASS files and recompiles them to css when they change.
+- `npm run lint:scss` : checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
+- `npm run lint:js` : checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
+- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
 
----
+Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+
+Good luck!
